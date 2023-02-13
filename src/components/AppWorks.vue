@@ -15,9 +15,25 @@ export default {
 
     <section id="works">
         <div class="container-lg">
-            <div>Our Works</div>
-            <h2>Featured Productions</h2>
-            <p>Here's just a small of some of those projects that we'ew quite proud of. If you're looking for something specific feel free to get in contact with us.</p>
+            <div class="text-works mx-auto">
+                <h5>Our Works</h5>
+                <h2>Featured Productions</h2>
+                <p>Here's just a small sample of some of those projects that we're quite proud of. If you're looking for something specific feel free to get in contact with us.</p>
+            </div>
+            <div class="cards-work d-flex flex-wrap">
+                <div class="me-4 mb-4">
+                    <img src="../assets/img/work1.png" alt="">
+                </div>
+                <div >
+                    <img src="../assets/img/work2.png" alt="">
+                </div>
+                <div class="me-4">
+                    <img src="../assets/img/work3.png" alt="">
+                </div>
+                <div>
+                    <img src="../assets/img/work4.png" alt="">
+                </div>
+            </div>
         </div>
     </section>
 

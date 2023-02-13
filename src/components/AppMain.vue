@@ -9,7 +9,7 @@ export default {
     components: {
         AppSmart,
         AppCount,
-        AppWorks,
+        AppWorks
     },
     data() {
         return {
