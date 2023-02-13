@@ -63,8 +63,36 @@ export default {
     <!-- Jumbotron -->
 
     <section class="jumbo">
+        <div class="dots w-100 d-flex position-absolute  justify-content-around">
+            <div>
+                <img src="../assets/img/dots-left.png" alt="">
+            </div>
+            <div>
+                <img src="../assets/img/dots-right.png" alt="">
+            </div>
+        </div>
+        <div class="mans w-100 d-flex position-absolute justify-content-between">
+            <div>
+                <img src="../assets/img/left-man.png" alt="">
+            </div>
+            <div>
+                <img src="../assets/img/right-man.png" alt="">
+            </div>
+        </div>
+        <div class="globe-1">
+            <img src="../assets/img/globe1.png" alt="globe1">
+        </div>
+        <div class="globe-3">
+            <img src="../assets/img/globe3.png" alt="globe3">
+        </div>
+        <div class="light">
+            <img src="../assets/img/light.png" alt="light">
+        </div>
+        <div class="globe-2">
+            <img src="../assets/img/globe2.png" alt="globe2">
+        </div>
         <div class="container-lg">
-            <div class="text-center jumbo-text">
+            <div class="text-center jumbo-text mb-5">
                 <h5>Image, Create, Experience</h5>
                 <h1>We Animate</h1>
                 <h1>Whit Ninja-Like Precision</h1>
@@ -73,6 +101,15 @@ export default {
                     <a href="" class="button btn-back text-dark mx-4">Start a Project</a>
                     <a href="" class="button text-white">Portfolio</a>
                 </div>
+            </div>
+            <div class="middle d-flex justify-content-center">
+                <img class="m-auto" src="../assets/img/middle.png" alt="">
+                <div class="play-middle">
+                    <i class="fa-solid fa-play"></i>
+                </div>
+            </div>
+            <div class="bottom-shape">
+                <img src="../assets/img/bottom-shape.png" alt="bottom-shape">
             </div>
         </div>
     </section>
