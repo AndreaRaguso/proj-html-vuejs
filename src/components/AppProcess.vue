@@ -53,6 +53,9 @@ export default {
                         <i class="fa-solid fa-arrow-right"></i>
                     </div>
                 </div>
+                <div class="rocket">
+                    <img class="w-50" src="../assets/img/smart4.png" alt="rocket">
+                </div>
             </div>
 
 

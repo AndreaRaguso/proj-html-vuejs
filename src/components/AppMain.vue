@@ -4,6 +4,7 @@ import AppSmart from '../components/AppSmart.vue';
 import AppCount from '../components/AppCount.vue';
 import AppWorks from '../components/AppWorks.vue';
 import AppProcess from '../components/AppProcess.vue';
+import AppTeam from '../components/AppTeam.vue';
 
 export default {
     name: 'AppMain',
@@ -12,6 +13,7 @@ export default {
         AppCount,
         AppWorks,
         AppProcess,
+        AppTeam,
     },
     data() {
         return {
@@ -28,6 +30,7 @@ export default {
     <AppCount />
     <AppWorks />
     <AppProcess />
+    <AppTeam />
 
 </template>
 

@@ -133,6 +133,7 @@
 
 #process{
     margin-bottom: 100px;
+    padding-bottom: 100px;
 }
 
 .process-thumb{
@@ -190,6 +191,58 @@
     padding: 15px;
     font-size: 25px;
 }
+
+.rocket{
+    position: absolute;
+    bottom: -100px;
+    right: 5%;
+}
+
+#team{
+    margin-bottom: 150px;
+}
+
+.text-team{
+    width: 600px;
+}
+
+.text-team h5 {
+    font-size: 25px;
+    color: #5e49df;
+}
+
+.text-team h2 {
+    font-size: 60px;
+    color: #311852;
+}
+
+.text-team p {
+    font-size: 18px;
+    margin-bottom: 50px;
+}
+
+.card-team{
+    width: 280px;
+    height: 250px;
+    background-color: #fff5f0;
+}
+
+.team-img{
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+    margin-top: -50px;
+}
+.team-img img{
+    width: 75%;
+}
+
+.team-info{
+    margin-top: -30px;
+}
+
+
+
 
 
 //Animated counters 
