@@ -1,0 +1,50 @@
+.smart-man{
+    top: -180px;
+    left: 0;
+    z-index: 2;
+}
+.smart-4{
+    bottom: 35px;
+    right: 170px;
+    z-index: 2;
+}
+
+#smart{
+    height: 1000px;
+}
+
+.text-smart{
+    width: 680px;
+    z-index: 3;
+}
+
+.text-smart h5{
+    font-size: 25px;
+}
+
+.text-smart h2{
+    font-size: 60px;
+}
+
+.text-smart p {
+    font-size: 18px;
+}
+
+.card{
+    height: 360px;
+    width: 270px;
+    border-radius: 40px !important;
+}
+
+.card h1{
+    font-size: 30px;
+}
+
+.card p{
+    font-size: 18px;
+}
+
+.card img{
+    width: 80px;
+    height: 80px;
+}
