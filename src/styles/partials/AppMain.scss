@@ -97,6 +97,9 @@
     bottom: 0;
 }
 
+#works{
+    margin-bottom: 150px;
+}
 
 .text-works{
     text-align: center;
@@ -122,11 +125,71 @@
     width: 600px;
 }
 
+.btn-work{
+    border: 1px solid gray;
+    text-decoration: none;
+    color: black;
+}
 
+#process{
+    margin-bottom: 100px;
+}
 
+.process-thumb{
+    position: absolute;
+    top: 0;
+    left: -15%;
+}
 
+.text-process h5 {
+    font-size: 25px;
+    color: #5e49df;
+}
 
+.text-process h2 {
+    font-size: 60px;
+    color: #311852;
+}
 
+.text-process p {
+    font-size: 18px;
+    margin-bottom: 50px;
+}
+
+.card-process{
+    height: 300px;
+    width: 270px;
+    border-radius: 20px !important;
+}
+
+.bg-processimg{
+    background-color: #fff5f0;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+}
+.bg-processimg img{
+    transform: translateY(50%);
+}
+
+.index-process{
+    position: absolute;
+    top: 0;
+    right: 20px;
+    background-color: #f7f0ff;
+    width: 40px;
+    border-radius: 0  0 30px 30px;
+}
+
+.btn-process div{
+    border-radius: 50%;
+    border: 1px solid grey;
+    color: grey;
+}
+.btn-process div i{
+    padding: 15px;
+    font-size: 25px;
+}
 
 
 //Animated counters 

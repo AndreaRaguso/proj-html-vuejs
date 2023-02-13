@@ -3,13 +3,15 @@
 import AppSmart from '../components/AppSmart.vue';
 import AppCount from '../components/AppCount.vue';
 import AppWorks from '../components/AppWorks.vue';
+import AppProcess from '../components/AppProcess.vue';
 
 export default {
     name: 'AppMain',
     components: {
         AppSmart,
         AppCount,
-        AppWorks
+        AppWorks,
+        AppProcess,
     },
     data() {
         return {
@@ -25,6 +27,7 @@ export default {
     <AppSmart />
     <AppCount />
     <AppWorks />
+    <AppProcess />
 
 </template>
 
