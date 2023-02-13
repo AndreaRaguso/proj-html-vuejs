@@ -1,50 +1,179 @@
-.smart-man{
+.smart-man {
     top: -180px;
     left: 0;
     z-index: 2;
 }
-.smart-4{
-    bottom: 35px;
+
+.smart-4 {
+    bottom: 60px;
     right: 170px;
     z-index: 2;
 }
 
-#smart{
-    height: 1000px;
+#smart {
+    height: 900px;
+    margin-top: 300px;
 }
 
-.text-smart{
+.text-smart {
     width: 680px;
     z-index: 3;
 }
 
-.text-smart h5{
+.text-smart h5 {
     font-size: 25px;
+    color: #5e49df;
 }
 
-.text-smart h2{
+.text-smart h2 {
     font-size: 60px;
+    color: #311852;
 }
 
 .text-smart p {
     font-size: 18px;
 }
 
-.card{
+.card {
     height: 360px;
     width: 270px;
     border-radius: 40px !important;
 }
 
-.card h1{
+.card h1 {
     font-size: 30px;
 }
 
-.card p{
+.card p {
     font-size: 18px;
 }
 
-.card img{
+.card img {
     width: 80px;
     height: 80px;
 }
+
+#counter{
+    margin-bottom: 100px;
+}
+
+.count {
+    background-image: url(assets/img/preloader.png);
+    height: 500px;
+    width: 100%;
+}
+
+.card-count{
+    text-align: center;
+    border: 1px solid white;
+    padding: 40px 0;
+    width: 230px;
+    border-radius: 20px;
+}
+
+.card-count h1{
+    font-weight: bold;
+    font-size: 50px;
+}
+
+.card-count h5{
+    font-size: 18px;
+    color: #ff7a1f;
+}
+
+.content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+
+.content h1{
+    font-size: 50px;
+}
+
+.shape-b {
+    bottom: 0;
+}
+
+
+
+
+
+
+
+
+
+
+//Animated counters 
+
+@property --num1 {
+    syntax: "<integer>";
+    initial-value: 0;
+    inherits: false;
+  }
+  
+  @property --num2 {
+    syntax: "<integer>";
+    initial-value: 0;
+    inherits: false;
+  }
+  
+  @property --num3 {
+    syntax: "<integer>";
+    initial-value: 0;
+    inherits: false;
+  }
+  @property --num4 {
+    syntax: "<integer>";
+    initial-value: 0;
+    inherits: false;
+  }
+  
+  .card-count #n1 {
+    counter-reset: num1 var(--num1);
+    font-weight: bold;
+    animation: animate 2s forwards ease;
+  }
+  
+  .card-count #n1:before {
+    content: counter(num1);
+  }
+
+  .card-count #n2 {
+    counter-reset:  num2 var(--num2);
+    font-weight: bold;
+    animation: animate 2s forwards ease;
+  }
+  
+  .card-count #n2:before {
+    content: counter(num2);
+  }
+  .card-count #n3 {
+    counter-reset:  num3 var(--num3);
+    font-weight: bold;
+    animation: animate 2s forwards ease;
+  }
+  
+  .card-count #n3:before {
+    content: counter(num3);
+  }
+  .card-count #n4 {
+    counter-reset: num4 var(--num4);
+    font-weight: bold;
+    animation: animate 2s forwards ease;
+  }
+  
+  .card-count #n4:before {
+    content: counter(num4);
+  }
+  
+  @keyframes animate {
+    to {
+      --num1: 700;
+      --num2: 250;
+      --num3: 25;
+      --num4: 12;
+    }
+  }
