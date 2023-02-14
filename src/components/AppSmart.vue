@@ -13,18 +13,24 @@ export default {
 
 <template>
 
+    <!-- SECTION SMARTS -->
     <section id="smart" class="d-flex position-relative">
+        <!-- IMAGE SMARTS SECTION -->
         <div class=" position-absolute smart-man">
             <img src="../assets/img/smart.png" alt="smart">
         </div>
+        <!-- SMARTS CONTAINER -->
         <div class="container-lg d-flex justify-content-center">
-            <div class="text-center text-smart">
+            <!-- TEXT SMARTS CONTAINER -->
+            <div class="text-center text-section">
                 <h5>Our Love For Animation</h5>
                 <h2>We're Storytelling Experts With Creative Smarts</h2>
                 <p class="mb-5">Our culture inspires the creative and innovative spirit found throughout our Studio. We
                     breathe life
                     into new ideas!</p>
+                <!-- CARDS CONTAINER -->
                 <div class="d-flex position-absolute">
+                    <!-- CARD SMARTS -->
                     <div class="card bg-card1 py-4 px-3 mx-4">
                         <img src="../assets/img/smart1.png" class="mx-auto" alt="smart1">
                         <h1>3D modeling</h1>
@@ -46,6 +52,7 @@ export default {
                 </div>
             </div>
         </div>
+        <!-- IMAGE ROCKET SMARTS -->
         <div class="position-absolute smart-4">
             <img class="w-50" src="../assets/img/smart4.png" alt="smart4">
         </div>

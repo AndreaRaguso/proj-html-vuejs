@@ -59,10 +59,10 @@ export default {
         </div>
     </header>
 
-
     <!-- Jumbotron -->
 
     <section class="jumbo">
+        <!-- JUMBO ABSOLUTE ITEMS BACKGROUND -->
         <div class="dots w-100 d-flex position-absolute  justify-content-around">
             <div>
                 <img src="../assets/img/dots-left.png" alt="">
@@ -91,6 +91,7 @@ export default {
         <div class="globe-2">
             <img src="../assets/img/globe2.png" alt="globe2">
         </div>
+        <!-- TEXT CONTAINER -->
         <div class="container-lg">
             <div class="text-center jumbo-text mb-5">
                 <h5>Image, Create, Experience</h5>

@@ -1,3 +1,56 @@
+//General
+
+.btn-info{
+    background-color: #231d70 !important;
+    color: white !important;
+    border: none !important;
+}
+
+.btn-info:hover{
+    background-color: #4d36dc !important;
+}
+
+.text-section {
+    width: 680px;
+    z-index: 3;
+}
+
+.text-section h5 {
+    font-size: 25px;
+    color: #5e49df;
+}
+
+.text-section h2 {
+    font-size: 60px;
+    color: #311852;
+}
+
+.text-section p {
+    font-size: 18px;
+}
+
+.socials a{
+    color: #4d36dc;
+    border: 1px solid gray;
+    background-color: white;
+    margin-right: 10px;
+    padding: 10px;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    font-size: 10px;
+    z-index: 5;
+}
+
+.socials a:hover{
+    background-color: #ff7a1f;
+    color: white;
+}
+
+
+
+//Section Smarts
+
 .smart-man {
     top: -180px;
     left: 0;
@@ -41,25 +94,6 @@
     margin-top: 300px;
 }
 
-.text-smart {
-    width: 680px;
-    z-index: 3;
-}
-
-.text-smart h5 {
-    font-size: 25px;
-    color: #5e49df;
-}
-
-.text-smart h2 {
-    font-size: 60px;
-    color: #311852;
-}
-
-.text-smart p {
-    font-size: 18px;
-}
-
 .card {
     height: 360px;
     width: 270px;
@@ -78,6 +112,9 @@
     width: 80px;
     height: 80px;
 }
+
+
+//Section Counters
 
 #counter{
     margin-bottom: 100px;
@@ -136,28 +173,10 @@
     z-index: 2;
 }
 
+//Section Works
+
 #works{
     margin-bottom: 150px;
-}
-
-.text-works{
-    text-align: center;
-    width: 630px;
-}
-
-.text-works h5 {
-    font-size: 25px;
-    color: #5e49df;
-}
-
-.text-works h2 {
-    font-size: 60px;
-    color: #311852;
-}
-
-.text-works p {
-    font-size: 18px;
-    margin-bottom: 50px;
 }
 
 .cards-work img{
@@ -170,6 +189,10 @@
     color: black;
 }
 
+
+//Section Process
+
+
 #process{
     margin-bottom: 100px;
     padding-bottom: 100px;
@@ -179,21 +202,6 @@
     position: absolute;
     top: 0;
     left: -15%;
-}
-
-.text-process h5 {
-    font-size: 25px;
-    color: #5e49df;
-}
-
-.text-process h2 {
-    font-size: 60px;
-    color: #311852;
-}
-
-.text-process p {
-    font-size: 18px;
-    margin-bottom: 50px;
 }
 
 .card-process{
@@ -243,27 +251,10 @@
     right: 5%;
 }
 
+//Section Teams
+
 #team{
     margin-bottom: 150px;
-}
-
-.text-team{
-    width: 600px;
-}
-
-.text-team h5 {
-    font-size: 25px;
-    color: #5e49df;
-}
-
-.text-team h2 {
-    font-size: 60px;
-    color: #311852;
-}
-
-.text-team p {
-    font-size: 18px;
-    margin-bottom: 50px;
 }
 
 .cards-team{
@@ -319,28 +310,13 @@
     right: 0;
 }
 
+//Section Why
+
 #why{
     margin-bottom: 150px;
 }
 
-.text-why{
-    width: 600px;
-}
-
-.text-why h5 {
-    font-size: 25px;
-    color: #5e49df;
-}
-
-.text-why h2 {
-    font-size: 60px;
-    color: #311852;
-}
-
-.text-why p {
-    font-size: 18px;
-    margin-bottom: 50px;
-}
+//Section Blog
 
 #blog{
     margin-bottom: 150px;
@@ -381,59 +357,6 @@
     border: 1px solid black;
     font-weight: bold;
 }
-
-footer{
-    margin-bottom: 20px;
-}
-
-footer ul{
-    list-style: none;
-}
-
-footer ul li a {
-    text-decoration: none;
-    color: black;
-    font-size: 18px;
-    font-weight: 700;
-    margin-right: 15px;
-}
-
-.softvirus{
-    color: #6c59e2;
-    font-weight: bold;
-}
-
-.socials a{
-    color: #4d36dc;
-    border: 1px solid gray;
-    background-color: white;
-    margin-right: 10px;
-    padding: 10px;
-    border-radius: 50%;
-    width: 40px;
-    height: 40px;
-    font-size: 10px;
-    z-index: 5;
-}
-
-.socials a:hover{
-    background-color: #ff7a1f;
-    color: white;
-}
-
-
-.btn-info{
-    background-color: #231d70 !important;
-    color: white !important;
-    border: none !important;
-}
-
-.btn-info:hover{
-    background-color: #4d36dc !important;
-}
-
-
-
 
 //Animated counters 
 

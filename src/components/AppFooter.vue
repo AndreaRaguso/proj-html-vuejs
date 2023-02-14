@@ -4,7 +4,7 @@ export default {
     name: 'AppFooter',
     data() {
         return {
-            
+
         }
     },
 }
@@ -12,15 +12,17 @@ export default {
 </script>
 
 <template>
-
+    <!-- FOOTER  -->
     <footer>
+        <!-- FOOTER CONTAINER -->
         <div class="container-lg">
-    
             <div class="d-flex justify-content-between align-items-center">
+                <!-- LOGO FOOTER -->
                 <div>
                     <img src="../assets/img/footer-logo.png" alt="logo-f">
                 </div>
-                <div>
+                <!-- NAV FOOTER -->
+                <nav>
                     <ul class="d-flex">
                         <li>
                             <a href="">About Us</a>
@@ -38,16 +40,16 @@ export default {
                             <a href="">Contact</a>
                         </li>
                     </ul>
-                </div>
+                </nav>
             </div>
-    
+            <!-- HORIZONTAL RULE FOOTER -->
             <hr>
-    
             <div class="d-flex justify-content-between">
-                
+                <!-- CREDITS FOOTER -->
                 <div>
                     <em>Copyright&#64 2022 <span class="softvirus">Softvirus</span>. All rights reserved.</em>
                 </div>
+                <!-- SOCIALS FOOTERS -->
                 <div>
                     <div class="socials d-flex justify-content-center mb-3">
                         <a href="#"><i class="fab fa-facebook-square fa-2x logo me-3"></i></a>
@@ -55,9 +57,7 @@ export default {
                         <a href="#"><i class="fab fa-instagram fa-2x logo"></i></a>
                     </div>
                 </div>
-
             </div>
-    
         </div>
     </footer>
 

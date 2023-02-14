@@ -13,21 +13,24 @@ export default {
 
 <template>
 
+    <!-- SECTION PROCESS -->
     <section id="process">
-
+        <!-- CONTAINER PROCESS -->
         <div class="position-relative">
-
+            <!-- THUMB IMAGE PROCESS -->
             <div class="process-thumb">
                 <img src="../assets/img/process-thumb.png" alt="process">
             </div>
-
-            <div class="text-process w-50 ms-auto">
+            <!-- TEXT PROCESS  -->
+            <div class="text-section w-50 ms-auto">
                 <h5>Our Process</h5>
                 <h2>Our Process for</h2>
                 <h2>Your Animation</h2>
                 <h2>Production</h2>
                 <p>We have an effective process for woking on animation</p>
+                <!-- CARDS CONTAINER -->
                 <div class="d-flex text-center">
+                    <!-- CARD PROCESS -->
                     <div class="card card-process py-4 px-3 me-4">
                         <div class="bg-processimg mx-auto mb-2">
                             <img src="../assets/img/process2.png" alt="process1">
@@ -45,6 +48,7 @@ export default {
                         <p class="mb-0">We'll take your idea and create a technical script which consists of action notes and animation descriptions</p>
                     </div>
                 </div>
+                <!-- BUTTON ARROW PROCESS -->
                 <div class="btn-process d-flex mt-3">
                     <div class="me-3">
                         <i class="fa-sharp fa-solid fa-arrow-left"></i>
@@ -53,6 +57,7 @@ export default {
                         <i class="fa-solid fa-arrow-right"></i>
                     </div>
                 </div>
+                <!-- ROCKET IMG PROCESS -->
                 <div class="rocket">
                     <img class="w-50" src="../assets/img/smart4.png" alt="rocket">
                 </div>

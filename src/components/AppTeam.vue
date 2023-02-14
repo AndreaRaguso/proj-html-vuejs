@@ -13,22 +13,26 @@ export default {
 
 <template>
 
+    <!-- SECTION TEAMS -->
     <section id="team" class=" position-relative">
-
-        <div class=" position-absolute">
+        <!-- SHAPES BACKGROUND TEAMS -->
+        <div class="position-absolute">
             <img src="../assets/img/shape.png" alt="">
         </div>
-        <div class=" position-absolute shape2">
+        <div class="position-absolute shape2">
             <img src="../assets/img/shape2.png" alt="">
         </div>
-
-        <div class=" container-lg">
-            <div class="text-team text-center mx-auto mb-3">
+        <!-- TEAMS CONTAINER -->
+        <div class="container-lg">
+            <!-- TEXT TEAMS CONTAINER -->
+            <div class="text-section text-center mx-auto mb-3">
                 <h5>Anido Magic Team Member</h5>
                 <h2>Let Us Animate Your Project</h2>
                 <p>We create new worlds! Let's collaborate and create engaging, effective, award-winning animations</p>
             </div>
+            <!-- TEAMS CARDS CONTAINER -->
             <div class="cards-team d-flex justify-content-center">
+                <!-- SINGLE CARD -->
                 <div class="card-team text-center me-3">
                     <div class="team-img">
                         <img src="../assets/img/team1.png" alt="team 1">
@@ -72,22 +76,25 @@ export default {
                     </div>
                 </div>
             </div>
+            <!-- ARROW DOTS CONTAINER -->
             <div class="d-flex mt-4 align-items-center justify-content-center">
+                <!-- RIGHT ARROW -->
                 <div class="me-3 btn-team">
                     <i class="fa-sharp fa-solid fa-arrow-left"></i>
                 </div>
+                <!-- DOTS -->
                 <div class="dot-team">
                     <i class="fa-solid fa-circle me-3"></i>
                     <i class="fa-solid fa-circle me-3 active"></i>
                     <i class="fa-solid fa-circle me-3"></i>
                     <i class="fa-solid fa-circle"></i>
                 </div>
+                <!-- LEFT ARROW -->
                 <div class="btn-team ms-3">
                     <i class="fa-solid fa-arrow-right"></i>
                 </div>
             </div>
         </div>
-
     </section>
 
 </template>
