@@ -4,9 +4,32 @@ export default {
     name: 'AppWhy',
     data() {
         return {
-
+            images: [
+                { link: '/src/assets/img/sponsor1.png' },
+                { link: '/src/assets/img/sponsor2.png' },
+                { link: '/src/assets/img/sponsor3.png' },
+                { link: '/src/assets/img/sponsor4.png' },
+                { link: '/src/assets/img/sponsor5.png' },
+            ],
+            play: undefined,
+            currentImage: 0,
         }
     },
+    methods:{
+        gotoNext() {
+          this.currentImage++;
+          if (this.currentImage === this.images.length) {
+            this.currentImage = 0;
+          }
+        },
+
+        timingimage(){
+            this.play = setInterval(this.gotoNext, 1000);
+        }
+    },
+    mounted(){
+        this.timingimage()
+    }
 }
 
 </script>
@@ -26,11 +49,9 @@ export default {
             </div>
             <!-- SPONSOR IMAGES -->
             <div class="d-flex justify-content-center">
-                <img src="../assets/img/sponsor1.png" class="me-3"  alt="">
-                <img src="../assets/img/sponsor2.png" class="me-3" alt="">
-                <img src="../assets/img/sponsor3.png" class="me-3" alt="">
-                <img src="../assets/img/sponsor4.png" class="me-3" alt="">
-                <img src="../assets/img/sponsor5.png" alt="">
+                <div v-for="image,index in images">
+                    <img :src="image.link" :class="{'active-sponsor': index === currentImage}" class="me-3 img-fluid" alt="">
+                </div>
             </div>
         </div>
     </section>

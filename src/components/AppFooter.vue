@@ -19,7 +19,7 @@ export default {
             <div class="d-flex justify-content-between align-items-center">
                 <!-- LOGO FOOTER -->
                 <div>
-                    <img src="../assets/img/footer-logo.png" alt="logo-f">
+                    <img class="img-fluid"  src="../assets/img/footer-logo.png" alt="logo-f">
                 </div>
                 <!-- NAV FOOTER -->
                 <nav>

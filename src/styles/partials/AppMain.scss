@@ -208,6 +208,11 @@
     height: 300px;
     width: 270px;
     border-radius: 20px !important;
+    display: none !important;
+}
+
+.active-card{
+    display: block !important;
 }
 
 .bg-processimg{
@@ -314,6 +319,13 @@
 
 #why{
     margin-bottom: 150px;
+}
+
+.active-sponsor{
+    transition: transform .3s;
+    -ms-transform: scale(1.4);
+    -webkit-transform: scale(1.4);
+    transform: scale(1.4);
 }
 
 //Section Blog

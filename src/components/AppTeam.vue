@@ -4,9 +4,53 @@ export default {
     name: 'AppTeam',
     data() {
         return {
-
+            teams: [
+                {
+                    link: '/src/assets/img/team1.png',
+                    name: 'Robert Coleman',
+                    work: 'Owner & Creative Director',
+                },
+                {
+                    link: '/src/assets/img/team2.png',
+                    name: 'Don Woods',
+                    work: 'Owner & Creative Director',
+                },
+                {
+                    link: '/src/assets/img/team1.png',
+                    name: 'Tomas Nash',
+                    work: 'Owner & Creative Director',
+                },
+                {
+                    link: '/src/assets/img/team2.png',
+                    name: 'Andrea Raguso',
+                    work: 'Capo supremo & Milionario',
+                },
+            ],
+            currentTeam: 0,
         }
     },
+    methods:{
+        gotoPrev() {
+          this.currentTeam--;
+          if (this.currentTeam < 0) {
+            this.currentTeam = this.teams.length - 1;
+          }
+        },
+        gotoNext() {
+          this.currentTeam++;
+          if (this.currentTeam == this.teams.length) {
+            this.currentTeam = 0;
+          }
+          console.log(this.currentTeam)
+        },
+
+        timingimage(){
+            this.play = setInterval(this.gotoNext, 3000);
+        }
+    },
+    mounted(){
+        this.timingimage()
+    }
 }
 
 </script>
@@ -17,10 +61,10 @@ export default {
     <section id="team" class=" position-relative">
         <!-- SHAPES BACKGROUND TEAMS -->
         <div class="position-absolute">
-            <img src="../assets/img/shape.png" alt="">
+            <img class="img-fluid"  src="../assets/img/shape.png" alt="">
         </div>
         <div class="position-absolute shape2">
-            <img src="../assets/img/shape2.png" alt="">
+            <img class="img-fluid"  src="../assets/img/shape2.png" alt="">
         </div>
         <!-- TEAMS CONTAINER -->
         <div class="container-lg">
@@ -33,41 +77,13 @@ export default {
             <!-- TEAMS CARDS CONTAINER -->
             <div class="cards-team d-flex justify-content-center">
                 <!-- SINGLE CARD -->
-                <div class="card-team text-center me-3">
+                <div class="card-team text-center me-3" v-for="team,index in teams" :class="{'d-none': index === currentTeam}">
                     <div class="team-img">
-                        <img src="../assets/img/team1.png" alt="team 1">
+                        <img class="img-fluid"  :src="team.link" alt="team 1">
                     </div>
                     <div class="team-info">
-                        <h5 class=" fw-bold">Robert Coleman</h5>
-                        <p>Owner & Creative Director</p>
-                    </div>
-                    <div class="socials d-flex justify-content-center mb-3">
-                        <a href="#"><i class="fab fa-facebook-square fa-2x logo me-3"></i></a>
-                        <a href="#"><i class="fab fa-twitter fa-2x logo me-3"></i></a>
-                        <a href="#"><i class="fab fa-instagram fa-2x logo"></i></a>
-                    </div>
-                </div>
-                <div class="card-team text-center me-3">
-                    <div class="team-img">
-                        <img src="../assets/img/team2.png" alt="team 1">
-                    </div>
-                    <div class="team-info">
-                        <h5 class=" fw-bold">Robert Coleman</h5>
-                        <p>Owner & Creative Director</p>
-                    </div>
-                    <div class="socials d-flex justify-content-center mb-3">
-                        <a href="#"><i class="fab fa-facebook-square fa-2x logo me-3"></i></a>
-                        <a href="#"><i class="fab fa-twitter fa-2x logo me-3"></i></a>
-                        <a href="#"><i class="fab fa-instagram fa-2x logo"></i></a>
-                    </div>
-                </div>
-                <div class="card-team text-center">
-                    <div class="team-img">
-                        <img src="../assets/img/team2.png" alt="team 1">
-                    </div>
-                    <div class="team-info">
-                        <h5 class=" fw-bold">Robert Coleman</h5>
-                        <p>Owner & Creative Director</p>
+                        <h5 class=" fw-bold">{{ team.name }}</h5>
+                        <p>{{ team.work }}</p>
                     </div>
                     <div class="socials d-flex justify-content-center mb-3">
                         <a href="#"><i class="fab fa-facebook-square fa-2x logo me-3"></i></a>
@@ -79,18 +95,15 @@ export default {
             <!-- ARROW DOTS CONTAINER -->
             <div class="d-flex mt-4 align-items-center justify-content-center">
                 <!-- RIGHT ARROW -->
-                <div class="me-3 btn-team">
+                <div class="me-3 btn-team" @click="gotoPrev">
                     <i class="fa-sharp fa-solid fa-arrow-left"></i>
                 </div>
                 <!-- DOTS -->
                 <div class="dot-team">
-                    <i class="fa-solid fa-circle me-3"></i>
-                    <i class="fa-solid fa-circle me-3 active"></i>
-                    <i class="fa-solid fa-circle me-3"></i>
-                    <i class="fa-solid fa-circle"></i>
+                    <i class="fa-solid fa-circle me-3" v-for="i in teams.length" :class="{'active': i === currentTeam+1}"></i>
                 </div>
                 <!-- LEFT ARROW -->
-                <div class="btn-team ms-3">
+                <div class="btn-team ms-3" @click="gotoNext">
                     <i class="fa-solid fa-arrow-right"></i>
                 </div>
             </div>

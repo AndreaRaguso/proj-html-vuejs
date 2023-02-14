@@ -17,7 +17,7 @@ export default {
     <section id="smart" class="d-flex position-relative">
         <!-- IMAGE SMARTS SECTION -->
         <div class=" position-absolute smart-man">
-            <img src="../assets/img/smart.png" alt="smart">
+            <img class="img-fluid"  src="../assets/img/smart.png" alt="smart">
         </div>
         <!-- SMARTS CONTAINER -->
         <div class="container-lg d-flex justify-content-center">
@@ -32,19 +32,19 @@ export default {
                 <div class="d-flex position-absolute">
                     <!-- CARD SMARTS -->
                     <div class="card bg-card1 py-4 px-3 mx-4">
-                        <img src="../assets/img/smart1.png" class="mx-auto" alt="smart1">
+                        <img src="../assets/img/smart1.png" class="mx-auto img-fluid" alt="smart1">
                         <h1>3D modeling</h1>
                         <p>We constantly ask questions. It helps us shape your story and deliver the results you crave.
                             Yep, we'll drill deep to deliver above and beyond your expectations.</p>
                     </div>
                     <div class="card bg-card2 py-4 px-3 mx-4">
-                        <img src="../assets/img/smart2.png" class="mx-auto" alt="smart2">
+                        <img src="../assets/img/smart2.png" class="mx-auto img-fluid" alt="smart2">
                         <h1>Collaboration</h1>
                         <p>We constantly ask questions. It helps us shape your story and deliver the results you crave.
                             Yep, we'll drill deep to deliver above and beyond your expectations.</p>
                     </div>
                     <div class="card bg-card3 py-4 px-3 mx-4">
-                        <img src="../assets/img/smart3.png" class="mx-auto" alt="smart3">
+                        <img  src="../assets/img/smart3.png" class="mx-auto img-fluid" alt="smart3">
                         <h1>Creativity</h1>
                         <p>We constantly ask questions. It helps us shape your story and deliver the results you crave.
                             Yep, we'll drill deep to deliver above and beyond your expectations.</p>
@@ -54,7 +54,7 @@ export default {
         </div>
         <!-- IMAGE ROCKET SMARTS -->
         <div class="position-absolute smart-4">
-            <img class="w-50" src="../assets/img/smart4.png" alt="smart4">
+            <img  class="w-50 img-fluid" src="../assets/img/smart4.png" alt="smart4">
         </div>
     </section>
 

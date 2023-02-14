@@ -4,22 +4,72 @@ export default {
     name: 'AppProcess',
     data() {
         return {
-
+            cards:[
+                {
+                    link: '/src/assets/img/process1.png',
+                    n: 1,
+                    title: 'Pre-Production',
+                    text: "We'll take your idea and create a technical script which consists of action notes and animation descriptions",
+                },
+                {
+                    link: '/src/assets/img/process2.png',
+                    n: 2,
+                    title: 'Scripting',
+                    text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae libero nulla illum laudantium totam sit excepturi?",
+                },
+                {
+                    link: '/src/assets/img/process1.png',
+                    n: 3,
+                    title: 'Modelling',
+                    text: "Corrupti soluta necessitatibus distinctio adipisci unde quam illo eos rerum recusandae placeat. Lorem Vitae situm grazie.",
+                },
+                {
+                    link: '/src/assets/img/process2.png',
+                    n: 4,
+                    title: 'Performance',
+                    text: "Doloremque eaque vitae hic repellendus, expedita eum rerum esse est impedit veritatis. Dolor sit amet codestum momentum",
+                },
+            ],
+            currentCard: 0,
         }
     },
+    methods:{
+        gotoPrev() {
+          this.currentCard--;
+          if (this.currentCard < 0) {
+            this.currentCard = this.cards.length - 1;
+          }
+        },
+        gotoNext() {
+          this.currentCard++;
+          if (this.currentCard == this.cards.length) {
+            this.currentCard = 0;
+          }
+          else if(this.currentCard == 3){
+            this.currentCard = 0
+          }
+          console.log(this.currentCard)
+        },
+
+        timingimage(){
+            this.play = setInterval(this.gotoNext, 3000);
+        }
+    },
+    mounted(){
+        this.timingimage()
+    }
 }
 
 </script>
 
 <template>
-
     <!-- SECTION PROCESS -->
     <section id="process">
         <!-- CONTAINER PROCESS -->
         <div class="position-relative">
             <!-- THUMB IMAGE PROCESS -->
             <div class="process-thumb">
-                <img src="../assets/img/process-thumb.png" alt="process">
+                <img class="img-fluid"  src="../assets/img/process-thumb.png" alt="process">
             </div>
             <!-- TEXT PROCESS  -->
             <div class="text-section w-50 ms-auto">
@@ -31,35 +81,27 @@ export default {
                 <!-- CARDS CONTAINER -->
                 <div class="d-flex text-center">
                     <!-- CARD PROCESS -->
-                    <div class="card card-process py-4 px-3 me-4">
+                    <div class="card card-process py-4 px-3 me-4" :class="{'active-card': index === currentCard},{'active-card': index === currentCard+1}" v-for="card,index in cards">
                         <div class="bg-processimg mx-auto mb-2">
-                            <img src="../assets/img/process2.png" alt="process1">
+                            <img class="img-fluid"  :src="card.link" alt="process1">
                         </div>
-                        <div class="index-process py-4">4</div>
-                        <h1>Pre-Production</h1>
-                        <p class="mb-0">We'll take your idea and create a technical script which consists of action notes and animation descriptions</p>
-                    </div>
-                    <div class="card card-process py-4 px-3 mx-4">
-                        <div class="bg-processimg mx-auto mb-2">
-                            <img src="../assets/img/process2.png" alt="process1">
-                        </div>
-                        <div class="index-process py-4">1</div>
-                        <h1>Scripting</h1>
-                        <p class="mb-0">We'll take your idea and create a technical script which consists of action notes and animation descriptions</p>
+                        <div class="index-process py-4">{{ card.n }}</div>
+                        <h1>{{ card.title }}</h1>
+                        <p class="mb-0">{{ card.text }}</p>
                     </div>
                 </div>
                 <!-- BUTTON ARROW PROCESS -->
                 <div class="btn-process d-flex mt-3">
-                    <div class="me-3">
+                    <div @click="gotoPrev()" class="me-3">
                         <i class="fa-sharp fa-solid fa-arrow-left"></i>
                     </div>
-                    <div>
+                    <div @click="gotoNext()">
                         <i class="fa-solid fa-arrow-right"></i>
                     </div>
                 </div>
                 <!-- ROCKET IMG PROCESS -->
                 <div class="rocket">
-                    <img class="w-50" src="../assets/img/smart4.png" alt="rocket">
+                    <img class="w-50 img-fluid" src="../assets/img/smart4.png" alt="rocket">
                 </div>
             </div>
 

@@ -27,16 +27,16 @@ export default {
             <div class="cards-work d-flex flex-wrap mb-5">
                 <!-- SINGOLE CARD WORK -->
                 <div class="me-4 mb-4">
-                    <img src="../assets/img/work1.png" alt="">
+                    <img class="img-fluid"  src="../assets/img/work1.png" alt="">
                 </div>
                 <div >
-                    <img src="../assets/img/work2.png" alt="">
+                    <img class="img-fluid"  src="../assets/img/work2.png" alt="">
                 </div>
                 <div class="me-4">
-                    <img src="../assets/img/work3.png" alt="">
+                    <img class="img-fluid" src="../assets/img/work3.png" alt="">
                 </div>
                 <div>
-                    <img src="../assets/img/work4.png" alt="">
+                    <img class="img-fluid"  src="../assets/img/work4.png" alt="">
                 </div>
             </div>
             <!-- BUTTON WORKS -->

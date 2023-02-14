@@ -4,9 +4,17 @@ export default {
     name: 'AppHeader',
     data() {
         return {
-            visible: false
+            visible: false,
         }
     },
+    methods: {
+        activeslider() {
+            this.visible = true;
+        },
+        stopSlider() {
+            this.visible = false;
+        },
+    }
 }
 
 </script>
@@ -25,7 +33,7 @@ export default {
 
             <nav class="d-flex justify-content-between align-items-center header-container">
                 <div>
-                    <img src="../assets/img/logo.png" alt="logo">
+                    <img class="img-fluid"  src="../assets/img/logo.png" alt="logo">
                 </div>
                 <div class="h-100">
                     <ul class="d-flex h-100 header-list align-items-center">
@@ -65,31 +73,31 @@ export default {
         <!-- JUMBO ABSOLUTE ITEMS BACKGROUND -->
         <div class="dots w-100 d-flex position-absolute  justify-content-around">
             <div>
-                <img src="../assets/img/dots-left.png" alt="">
+                <img class="img-fluid"  src="../assets/img/dots-left.png" alt="">
             </div>
             <div>
-                <img src="../assets/img/dots-right.png" alt="">
+                <img class="img-fluid"  src="../assets/img/dots-right.png" alt="">
             </div>
         </div>
         <div class="mans w-100 d-flex position-absolute justify-content-between">
             <div>
-                <img src="../assets/img/left-man.png" alt="">
+                <img class="img-fluid"  src="../assets/img/left-man.png" alt="">
             </div>
             <div>
-                <img src="../assets/img/right-man.png" alt="">
+                <img class="img-fluid"  src="../assets/img/right-man.png" alt="">
             </div>
         </div>
         <div class="globe-1">
-            <img src="../assets/img/globe1.png" alt="globe1">
+            <img class="img-fluid"  src="../assets/img/globe1.png" alt="globe1">
         </div>
         <div class="globe-3">
-            <img src="../assets/img/globe3.png" alt="globe3">
+            <img class="img-fluid"  src="../assets/img/globe3.png" alt="globe3">
         </div>
         <div class="light">
-            <img src="../assets/img/light.png" alt="light">
+            <img class="img-fluid"  src="../assets/img/light.png" alt="light">
         </div>
         <div class="globe-2">
-            <img src="../assets/img/globe2.png" alt="globe2">
+            <img class="img-fluid"  src="../assets/img/globe2.png" alt="globe2">
         </div>
         <!-- TEXT CONTAINER -->
         <div class="container-lg">
@@ -103,13 +111,17 @@ export default {
                     <a href="" class="button text-white">Portfolio</a>
                 </div>
             </div>
-            <div class="middle d-flex justify-content-center">
+            <div class="middle d-flex justify-content-center position-relative">
                 <img class="m-auto" src="../assets/img/middle.png" alt="">
-                <div class="play-middle" @click="visible = true">
-                    <div v-if="visible == true">
-                        <iframe width="700" height="400" src="https://www.youtube.com/embed/8X2kIfS6fb8?autoplay=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                    </div>
-                    <i v-else class="fa-solid fa-play"></i>
+                <div class="play-middle" @click="activeslider()">
+                    <i v-show="visible == false" class="fa-solid fa-play"></i>
+                </div>
+                <div v-show="visible == true" class="slider-middle">
+                    <iframe width="700" height="400" src="https://www.youtube.com/embed/8X2kIfS6fb8?autoplay=1"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen v-if="visible == true"></iframe>
+                    <i @click="stopSlider()" class="fa-sharp fa-solid fa-circle-xmark cross-middle"></i>
                 </div>
             </div>
             <div class="bottom-shape">

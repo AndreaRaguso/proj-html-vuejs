@@ -19,7 +19,7 @@ export default {
         <div class=" position-relative">
             <!-- SHAPE TOP CONTAINER -->
             <div class=" position-absolute">
-                <img class="w-100" src="../assets/img/shape-top.png" alt="shapetop">
+                <img class="w-100 img-fluid" src="../assets/img/shape-top.png" alt="shapetop">
             </div>
             <!-- COUNT CONTAINER -->
             <div class="count">
@@ -39,7 +39,7 @@ export default {
             </div>
             <!-- SHPAE BOTTOM CONTAINER -->
             <div class="position-absolute shape-b">
-                <img class="w-100" src="../assets/img/shape-bottom.png" alt="shapebottom">
+                <img class="w-100 img-fluid" src="../assets/img/shape-bottom.png" alt="shapebottom">
             </div>
         </div>
 
