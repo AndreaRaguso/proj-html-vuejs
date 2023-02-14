@@ -221,10 +221,15 @@
     margin-bottom: 50px;
 }
 
+.cards-team{
+    margin-top: 5.5rem;
+}
+
 .card-team{
     width: 280px;
     height: 250px;
     background-color: #fff5f0;
+    border-radius: 20px;
 }
 
 .team-img{
@@ -239,6 +244,29 @@
 
 .team-info{
     margin-top: -30px;
+}
+
+.btn-team{
+    border-radius: 50%;
+    border: 1px solid grey;
+    color: grey;
+}
+.btn-team i{
+    padding: 15px;
+    font-size: 15px;
+}
+
+.dot-team{
+    color: gray;
+    font-size: 13px;
+}
+.dot-team .active{
+    color: #ff9a55;
+}
+
+.shape2{
+    top: 0;
+    right: 0;
 }
 
 
