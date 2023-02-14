@@ -4,7 +4,7 @@ export default {
     name: 'AppHeader',
     data() {
         return {
-            
+            visible: false
         }
     },
 }
@@ -105,10 +105,11 @@ export default {
             </div>
             <div class="middle d-flex justify-content-center">
                 <img class="m-auto" src="../assets/img/middle.png" alt="">
-                <div class="play-middle">
-                    <i class="fa-solid fa-play">
-                        <!-- <a class="slider-middle" href="https://www.youtube.com/watch?v=JFf8I_8Ubv4"></a> -->
-                    </i>
+                <div class="play-middle" @click="visible = true">
+                    <div v-if="visible == true">
+                        <iframe width="700" height="400" src="https://www.youtube.com/embed/8X2kIfS6fb8?autoplay=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    </div>
+                    <i v-else class="fa-solid fa-play"></i>
                 </div>
             </div>
             <div class="bottom-shape">

@@ -9,12 +9,10 @@ This template should help get you started developing with Vue 3 in Vite. The tem
 
 
 -- Chidere dots z-index
--- arrow top scroll
 -- slider video
 
 TO DO 
 
 -- RENDERE RESPONSIVE N
 -- CAROSELLI E INTERACTION T
--- SLIDER VIDEO T
 -- ANIMATION DOVE CI PARE T
