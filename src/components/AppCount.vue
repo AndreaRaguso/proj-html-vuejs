@@ -18,6 +18,9 @@ export default {
             <div class=" position-absolute">
                 <img class="w-100" src="../assets/img/shape-top.png" alt="shapetop">
             </div>
+            <div class="globe-count">
+                <img src="../assets/img/globe.png" alt="globe">
+            </div>
             <div class="count">
                 <div class="content">
                     <h1 class="text-center">Anidio Quick Facts</h1>

@@ -37,7 +37,7 @@ export default {
                         <h5 class=" fw-bold">Robert Coleman</h5>
                         <p>Owner & Creative Director</p>
                     </div>
-                    <div class="logos d-flex justify-content-center mb-3">
+                    <div class="socials d-flex justify-content-center mb-3">
                         <a href="#"><i class="fab fa-facebook-square fa-2x logo me-3"></i></a>
                         <a href="#"><i class="fab fa-twitter fa-2x logo me-3"></i></a>
                         <a href="#"><i class="fab fa-instagram fa-2x logo"></i></a>
@@ -45,13 +45,13 @@ export default {
                 </div>
                 <div class="card-team text-center me-3">
                     <div class="team-img">
-                        <img src="../assets/img/team1.png" alt="team 1">
+                        <img src="../assets/img/team2.png" alt="team 1">
                     </div>
                     <div class="team-info">
                         <h5 class=" fw-bold">Robert Coleman</h5>
                         <p>Owner & Creative Director</p>
                     </div>
-                    <div class="logos d-flex justify-content-center mb-3">
+                    <div class="socials d-flex justify-content-center mb-3">
                         <a href="#"><i class="fab fa-facebook-square fa-2x logo me-3"></i></a>
                         <a href="#"><i class="fab fa-twitter fa-2x logo me-3"></i></a>
                         <a href="#"><i class="fab fa-instagram fa-2x logo"></i></a>
@@ -59,13 +59,13 @@ export default {
                 </div>
                 <div class="card-team text-center">
                     <div class="team-img">
-                        <img src="../assets/img/team1.png" alt="team 1">
+                        <img src="../assets/img/team2.png" alt="team 1">
                     </div>
                     <div class="team-info">
                         <h5 class=" fw-bold">Robert Coleman</h5>
                         <p>Owner & Creative Director</p>
                     </div>
-                    <div class="logos d-flex justify-content-center mb-3">
+                    <div class="socials d-flex justify-content-center mb-3">
                         <a href="#"><i class="fab fa-facebook-square fa-2x logo me-3"></i></a>
                         <a href="#"><i class="fab fa-twitter fa-2x logo me-3"></i></a>
                         <a href="#"><i class="fab fa-instagram fa-2x logo"></i></a>

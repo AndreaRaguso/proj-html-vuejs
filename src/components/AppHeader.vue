@@ -27,8 +27,8 @@ export default {
                 <div>
                     <img src="../assets/img/logo.png" alt="logo">
                 </div>
-                <div>
-                    <ul class="d-flex header-list align-items-center">
+                <div class="h-100">
+                    <ul class="d-flex h-100 header-list align-items-center">
                         <li>
                             <a href="">Home</a>
                         </li>
@@ -105,7 +105,9 @@ export default {
             <div class="middle d-flex justify-content-center">
                 <img class="m-auto" src="../assets/img/middle.png" alt="">
                 <div class="play-middle">
-                    <i class="fa-solid fa-play"></i>
+                    <i class="fa-solid fa-play">
+                        <!-- <a class="slider-middle" href="https://www.youtube.com/watch?v=JFf8I_8Ubv4"></a> -->
+                    </i>
                 </div>
             </div>
             <div class="bottom-shape">

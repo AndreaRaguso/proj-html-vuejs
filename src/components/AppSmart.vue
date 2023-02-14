@@ -25,19 +25,19 @@ export default {
                     breathe life
                     into new ideas!</p>
                 <div class="d-flex position-absolute">
-                    <div class="card py-4 px-3 mx-4">
+                    <div class="card bg-card1 py-4 px-3 mx-4">
                         <img src="../assets/img/smart1.png" class="mx-auto" alt="smart1">
                         <h1>3D modeling</h1>
                         <p>We constantly ask questions. It helps us shape your story and deliver the results you crave.
                             Yep, we'll drill deep to deliver above and beyond your expectations.</p>
                     </div>
-                    <div class="card py-4 px-3 mx-4">
+                    <div class="card bg-card2 py-4 px-3 mx-4">
                         <img src="../assets/img/smart2.png" class="mx-auto" alt="smart2">
                         <h1>Collaboration</h1>
                         <p>We constantly ask questions. It helps us shape your story and deliver the results you crave.
                             Yep, we'll drill deep to deliver above and beyond your expectations.</p>
                     </div>
-                    <div class="card py-4 px-3 mx-4">
+                    <div class="card bg-card3 py-4 px-3 mx-4">
                         <img src="../assets/img/smart3.png" class="mx-auto" alt="smart3">
                         <h1>Creativity</h1>
                         <p>We constantly ask questions. It helps us shape your story and deliver the results you crave.

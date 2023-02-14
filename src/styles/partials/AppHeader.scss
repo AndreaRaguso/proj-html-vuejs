@@ -10,6 +10,12 @@
     z-index: 5;
 }
 
+.button:hover{
+    background-color: #280364;
+    color: white !important;
+}
+
+
 .btn-back {
     background-color: #ffdfed;
 }
@@ -36,6 +42,12 @@ header {
 
 .header-list li {
     padding: 0 10px;
+    height: 100%;
+    line-height: 60px;
+    cursor: pointer;
+}
+.header-list li:hover a {
+    color: #ff7a1f;
 }
 
 .header-list li a {
@@ -43,6 +55,7 @@ header {
     color: white;
     font-weight: 600;
     font-size: 18px;
+    height: 100%;
 }
 
 
@@ -145,4 +158,9 @@ header {
 .bottom-shape img{
     width: 100%;
     height: 100%;
+}
+
+.slider-middle{
+    height: 300px;
+    width: 300px;
 }
