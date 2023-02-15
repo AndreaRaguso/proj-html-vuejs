@@ -16,12 +16,12 @@ export default {
                     work: 'Owner & Creative Director',
                 },
                 {
-                    link: '/src/assets/img/team1.png',
+                    link: '/src/assets/img/team4.png',
                     name: 'Tomas Nash',
                     work: 'Owner & Creative Director',
                 },
                 {
-                    link: '/src/assets/img/team2.png',
+                    link: '/src/assets/img/team3.png',
                     name: 'Andrea Raguso',
                     work: 'Capo supremo & Milionario',
                 },
@@ -41,7 +41,6 @@ export default {
           if (this.currentTeam == this.teams.length) {
             this.currentTeam = 0;
           }
-          console.log(this.currentTeam)
         },
 
         timingimage(){

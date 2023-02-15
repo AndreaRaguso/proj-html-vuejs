@@ -48,7 +48,6 @@ export default {
           else if(this.currentCard == 3){
             this.currentCard = 0
           }
-          console.log(this.currentCard)
         },
 
         timingimage(){
