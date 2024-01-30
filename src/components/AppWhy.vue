@@ -5,11 +5,11 @@ export default {
     data() {
         return {
             images: [
-                { link: '/src/assets/img/sponsor1.png' },
-                { link: '/src/assets/img/sponsor2.png' },
-                { link: '/src/assets/img/sponsor3.png' },
-                { link: '/src/assets/img/sponsor4.png' },
-                { link: '/src/assets/img/sponsor5.png' },
+                { link: '../assets/img/sponsor1.png' },
+                { link: '../assets/img/sponsor2.png' },
+                { link: '../assets/img/sponsor3.png' },
+                { link: '../assets/img/sponsor4.png' },
+                { link: '../assets/img/sponsor5.png' },
             ],
             play: undefined,
             currentImage: 0,

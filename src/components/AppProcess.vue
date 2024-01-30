@@ -6,25 +6,25 @@ export default {
         return {
             cards:[
                 {
-                    link: '/src/assets/img/process1.png',
+                    link: '../assets/img/process1.png',
                     n: 1,
                     title: 'Pre-Production',
                     text: "We'll take your idea and create a technical script which consists of action notes and animation descriptions",
                 },
                 {
-                    link: '/src/assets/img/process2.png',
+                    link: '../assets/img/process2.png',
                     n: 2,
                     title: 'Scripting',
                     text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae libero nulla illum laudantium totam sit excepturi?",
                 },
                 {
-                    link: '/src/assets/img/process1.png',
+                    link: '../assets/img/process1.png',
                     n: 3,
                     title: 'Modelling',
                     text: "Corrupti soluta necessitatibus distinctio adipisci unde quam illo eos rerum recusandae placeat. Lorem Vitae situm grazie.",
                 },
                 {
-                    link: '/src/assets/img/process2.png',
+                    link: '../assets/img/process2.png',
                     n: 4,
                     title: 'Performance',
                     text: "Doloremque eaque vitae hic repellendus, expedita eum rerum esse est impedit veritatis. Dolor sit amet codestum momentum",

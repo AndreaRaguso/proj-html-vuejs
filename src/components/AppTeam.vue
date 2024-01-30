@@ -6,22 +6,22 @@ export default {
         return {
             teams: [
                 {
-                    link: '/src/assets/img/team1.png',
+                    link: '../assets/img/team1.png',
                     name: 'Robert Coleman',
                     work: 'Owner & Creative Director',
                 },
                 {
-                    link: '/src/assets/img/team2.png',
+                    link: '../assets/img/team2.png',
                     name: 'Don Woods',
                     work: 'Owner & Creative Director',
                 },
                 {
-                    link: '/src/assets/img/team4.png',
+                    link: '../assets/img/team4.png',
                     name: 'Tomas Nash',
                     work: 'Owner & Creative Director',
                 },
                 {
-                    link: '/src/assets/img/team3.png',
+                    link: '../assets/img/team3.png',
                     name: 'Andrea Raguso',
                     work: 'Capo supremo & Milionario',
                 },
